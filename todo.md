@@ -5,4 +5,4 @@
 - [x] Add structured explanation panels plus local text extraction where browser support exists, with failure-safe behavior.
 - [x] Add save/load projects and a clearly disclosed optional external-analysis adapter that never uploads an image silently.
 - [x] Add Linux/Windows launchers, configurable localhost hosting, privacy documentation, and automated tests.
-- [ ] Validate the app, create a private GitHub repository, and push the completed project.
+- [x] Validate the app, create a private GitHub repository, and push the completed project.
