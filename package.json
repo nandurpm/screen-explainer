@@ -1,1 +1,20 @@
-{"name":"screen-explainer","version":"1.0.0","private":true,"type":"module","license":"MIT","description":"Privacy-conscious local screenshot explanation and annotation tool.","bin":{"screen-explainer":"./src/cli.mjs"},"scripts":{"test":"node --test tests/*.test.mjs","check":"node --check src/*.mjs","demo":"node src/cli.mjs demo --out reports/demo"},"engines":{"node":">=22"}}
+{
+  "name": "screen-explainer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Privacy-conscious local screenshot explanation and annotation tool.",
+  "bin": {
+    "screen-explainer": "./src/cli.mjs"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check src/*.mjs",
+    "demo": "node src/cli.mjs demo --out reports/demo",
+    "start": "node src/render.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
