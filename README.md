@@ -37,3 +37,9 @@ Tests cover annotations, coordinate transforms, project serialization, malformed
 ## License
 
 MIT.
+
+## Live Render Demo
+
+A responsive, synthetic/demo report is available at [https://screen-explainer.onrender.com](https://screen-explainer.onrender.com). The hosted view is read-only and preserves the repository's documented local-first boundaries.
+
+<!-- render-live-url:https://screen-explainer.onrender.com -->
