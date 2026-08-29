@@ -1,3 +1,10 @@
+/*
+ * ============================================================
+ * FILE: screen.test.mjs
+ * PURPOSE: Exercises Explain This Screenshot's domain behavior, validation, persistence, reporting, and safety boundaries with the Node.js test runner.
+ * ============================================================
+ */
+
 import assert from "node:assert/strict";import test from "node:test";import { runExternalAnalysis,extractLocalText } from "../src/adapters.mjs";import { demoProject } from "../src/demo.mjs";import { addAnnotation,createProject,normalizeRect,scaleRect,serializeProject,validateProject } from "../src/model.mjs";import { reportHtml } from "../src/report.mjs";
 test('serializes and validates local annotation projects',()=>{let project=createProject({image:{name:'x',width:100,height:50,dataUrl:'data:image/png;base64,AA=='}});project=addAnnotation(project,{label:'Button',notes:'Manual note',rect:{x:.1,y:.2,width:.3,height:.4}});const restored=validateProject(JSON.parse(serializeProject(project)));assert.equal(restored.annotations[0].label,'Button')});
 test('normalizes and scales image transforms consistently',()=>{const rect=normalizeRect({x:10,y:20,width:40,height:30},100,100);assert.deepEqual(rect,{x:.1,y:.2,width:.4,height:.3});assert.deepEqual(scaleRect(rect,100,100),{x:10,y:20,width:40,height:30})});

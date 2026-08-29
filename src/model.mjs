@@ -1,3 +1,10 @@
+/*
+ * ============================================================
+ * FILE: model.mjs
+ * PURPOSE: Defines Explain This Screenshot's domain model, validation rules, calculations, and aggregation helpers.
+ * ============================================================
+ */
+
 import { randomUUID } from "node:crypto";
 export const SCHEMA_VERSION=1;
 const text=value=>String(value??"").trim();
